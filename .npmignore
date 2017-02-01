@@ -1,6 +1,7 @@
 demo/
 src/
 test/
+scripts/
 webpack.config.js
 .gitignore
 .npmignore
