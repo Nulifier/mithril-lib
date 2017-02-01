@@ -1,6 +1,6 @@
 {
   "name": "mithril-lib",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A compilation of UI components for Mithril.js",
   "main": "index.js",
   "scripts": {
