@@ -1,0 +1,31 @@
+{
+  "name": "mithril-lib",
+  "version": "1.0.0",
+  "description": "A compilation of UI components for Mithril.js",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "webpack --env=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nulifier/mithril-lib.git"
+  },
+  "keywords": [
+    "mithril",
+    "ui",
+    "components",
+    "mithriljs"
+  ],
+  "author": "Jeffrey Steward <nulifier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nulifier/mithril-lib/issues"
+  },
+  "homepage": "https://github.com/Nulifier/mithril-lib#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "mithril": "^1.0.0",
+    "webpack": "^2.2.1"
+  }
+}
