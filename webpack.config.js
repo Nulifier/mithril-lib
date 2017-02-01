@@ -1,4 +1,5 @@
 var webpack		= require('webpack');
+var path		= require('path');
 
 module.exports = function(env) {
 	var DEV = (env === 'development');
@@ -20,6 +21,13 @@ module.exports = function(env) {
 		resolve: {
 
 		},
+		externals: {
+			'mithril': {
+				commonjs: 'mithril',
+				amd: 'mithril',
+				root: 'm'
+			}
+		},
 		devtool: DEV ? 'cheap-module-eval-source-map' : 'cheap-module-source-map',
 		plugins: DEV ? [
 
@@ -27,7 +35,8 @@ module.exports = function(env) {
 			new webpack.optimize.UglifyJsPlugin()
 		],
 		devServer: {
-
+			contentBase: path.join(__dirname, 'demo'),
+			compress: true
 		}
 	};
 };
