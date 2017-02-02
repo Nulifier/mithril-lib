@@ -1,3 +1,4 @@
-import * as select from './select';
+import * as Select from './select';
+import * as Tooltip from './tooltip';
 
-export {select};
+export {Select, Tooltip};
