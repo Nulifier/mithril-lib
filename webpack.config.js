@@ -35,7 +35,10 @@ module.exports = function(env) {
 			new webpack.optimize.UglifyJsPlugin()
 		],
 		devServer: {
-			contentBase: path.join(__dirname, 'demo'),
+			contentBase: [
+				path.join(__dirname, 'demo'),
+				__dirname
+			],
 			compress: true
 		}
 	};
